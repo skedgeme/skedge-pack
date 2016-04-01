@@ -24,25 +24,29 @@ This is meant to be both a design explanation as well as a project planning sect
 
 
 #### webpack
-* webpack-dev-server **@TODO**
+* [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) **@TODO**
 
 #### Javascript
 * Eslint
   * Idiomatic JS code standard
+  * React
 * Uglify2
-* Sourcemaps
-* webpack-strip **@TODO**
-* jasmine w/ karma unit testing **@TODO**
-* selenium w/ nightwatch ui testing **@TODO**
+* Babel
+  * ES 2015
+  * React JSX
+* source maps
+* [webpack-strip](https://github.com/yahoo/strip-loader) **@TODO**
+* [jasmine](https://www.npmjs.com/package/es6-karma-jasmine-webpack-boilerplate) w/ [karma](https://github.com/webpack/karma-webpack) unit testing **@TODO**
+* [selenium](https://github.com/shanewilson/react-webpack-example/blob/master/nightwatch.json) w/ [nightwatch](http://nightwatchjs.org/) ui testing **@TODO**
 
 #### CSS
 * sass/scss compiler **@TODO**
-* csscomb for code style **@TODO**
-* autoprefixing **@TODO**
+* [csscomb](https://github.com/koistya/csscomb-loader) for code style **@TODO**
+* [autoprefixing](https://github.com/passy/autoprefixer-loader) **@TODO**
 * minification **@TODO**
 
 #### Assets
-* minification **@TODO**
+* [minification](https://github.com/tcoopman/image-webpack-loader) **@TODO**
 
 ### Options
 ```
