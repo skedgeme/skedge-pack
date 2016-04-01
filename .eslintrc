@@ -1,0 +1,9 @@
+{
+  parser  : 'babel-eslint',
+  extends : 'idiomatic',
+  plugins : [ 'react' ],
+  env : {
+    browser : true,
+    node : true
+  }
+}
