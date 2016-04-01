@@ -24,9 +24,21 @@ This is meant to be both a design explanation as well as a project planning sect
 
 #### Javascript
 
+##### Goals
+
+##### Tools
+
 #### CSS
 
+##### Goals
+
+##### Tools
+
 #### Assets
+
+##### Goals
+
+##### Tools
 
 
 ### Options
