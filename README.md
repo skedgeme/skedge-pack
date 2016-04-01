@@ -22,24 +22,27 @@ This is meant to be both a design explanation as well as a project planning sect
 
 ### Modules
 
+
+#### webpack
+* webpack-dev-server **@TODO**
+
 #### Javascript
-
-##### Goals
-
-##### Tools
+* Eslint
+  * Idiomatic JS code standard
+* Uglify2
+* Sourcemaps
+* webpack-strip **@TODO**
+* jasmine w/ karma unit testing **@TODO**
+* selenium w/ nightwatch ui testing **@TODO**
 
 #### CSS
-
-##### Goals
-
-##### Tools
+* sass/scss compiler **@TODO**
+* csscomb for code style **@TODO**
+* autoprefixing **@TODO**
+* minification **@TODO**
 
 #### Assets
-
-##### Goals
-
-##### Tools
-
+* minification **@TODO**
 
 ### Options
 ```
