@@ -20,6 +20,15 @@ Our webpack build system for developing react projects.
 ## Build System Design
 This is meant to be both a design explanation as well as a project planning section.
 
+### Modules
+
+#### Javascript
+
+#### CSS
+
+#### Assets
+
+
 ### Options
 ```
 ({
