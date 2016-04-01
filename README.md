@@ -20,9 +20,36 @@ Our webpack build system for developing react projects.
 ## Build System Design
 This is meant to be both a design explanation as well as a project planning section.
 
-### Flags
+### Options
+```
+({
 
-### Configs
+  // flags can be either a string or an Array
+  flags: 'watch source clear minify',
+  // or
+  flags: [ 'watch', 'source', 'clear', 'minify' ],
+
+  // source determines the folder that the build system looks in for files
+  // defaults to 'source'
+  source: 'src',
+
+  // destination determines the folder that the build system adds files to
+  // defaults to 'app'
+  destination: 'application',
+
+  // main is the path to the main module file that the entire project is going to be built off
+  // the project assumes that it is inside the folder specified by 'source'
+  // defaults to 'main.js'
+  main: 'app.js'
+
+
+  // config points to the file that is used to configure the index.html file
+  // the project assumes that it is inside the folder specified by 'source'
+  // defaults to 'config.js'
+  config: 'project.js'
+
+})
+```
 
 
 ### Programmatic Build
@@ -69,7 +96,7 @@ Build : `spack dev source=source destination=app`
 | --ignore | -i | Keep building even if errors are found  |
 
 
-#### Build Commands
+#### Builds
 These should be run using `npm run {build name}`, which runs `node bin/build.js {flags}`.
 
 | Name | Flags | Purpose |
