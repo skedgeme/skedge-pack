@@ -3,7 +3,7 @@ logs
 *.log
 npm-debug.log*
 .DS_Store
-./tests/application/
+tests/application
 
 
 # Runtime data
