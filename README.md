@@ -47,7 +47,9 @@ or a very minimalist build approach
 
 ### Command Line
 Flags can either be called individually through  '--' and '-' commands or as groups through complete strings. Other options are identified by there equals sign `configVarName=config`.
+
 Flags : `spack --server --source --concat source=source destination=app`
+
 Build : `spack dev source=source destination=app`
 
 
