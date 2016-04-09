@@ -46,7 +46,7 @@ This is meant to be both a design explanation as well as a project planning sect
 * minification **@TODO**
 
 #### Assets
-* [minification](https://github.com/tcoopman/image-webpack-loader) **@TODO**
+* [minification](https://github.com/tcoopman/image-webpack-loader)
 
 ### Options
 ```
