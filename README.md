@@ -40,7 +40,7 @@ This is meant to be both a design explanation as well as a project planning sect
 * [selenium](https://github.com/shanewilson/react-webpack-example/blob/master/nightwatch.json) w/ [nightwatch](http://nightwatchjs.org/) ui testing **@TODO**
 
 #### CSS
-* sass/scss compiler **@TODO**
+* sass/scss compiler
 * [csscomb](https://github.com/koistya/csscomb-loader) for code style **@TODO**
 * [autoprefixing](https://github.com/passy/autoprefixer-loader) **@TODO**
 * minification **@TODO**
