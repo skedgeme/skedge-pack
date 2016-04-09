@@ -1,7 +1,7 @@
 {
   parser  : 'babel-eslint',
   extends : 'idiomatic',
-  plugins : [ 'react' ],
+  plugins : [ 'react', 'promise' ],
   env : {
     browser : true,
     node : true
