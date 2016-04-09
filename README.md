@@ -35,7 +35,7 @@ This is meant to be both a design explanation as well as a project planning sect
   * ES 2015
   * React JSX
 * source maps
-* [webpack-strip](https://github.com/yahoo/strip-loader) **@TODO**
+* [webpack-strip](https://github.com/yahoo/strip-loader)
 * [jasmine](https://www.npmjs.com/package/es6-karma-jasmine-webpack-boilerplate) w/ [karma](https://github.com/webpack/karma-webpack) unit testing **@TODO**
 * [selenium](https://github.com/shanewilson/react-webpack-example/blob/master/nightwatch.json) w/ [nightwatch](http://nightwatchjs.org/) ui testing **@TODO**
 
