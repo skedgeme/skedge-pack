@@ -41,6 +41,10 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
       ],
       loaders: [
         {
+          test: /\.scss|\.sass/,
+          loaders: ["style", "css", "sass"]
+        },
+        {
           test: /\.jsx?$/,
           exclude: /(config\.js|(_[^\/]*)|(.*\.spec\.js))$/,
           loader: 'babel-loader',
