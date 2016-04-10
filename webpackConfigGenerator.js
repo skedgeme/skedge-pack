@@ -6,13 +6,25 @@ const
 path = require('path'),
 chalk = require('chalk'),
 
+// postcss
+scss = require('postcss-scss'),
+autoprefixer = require('autoprefixer'),
+cssnano = require('cssnano'),
+
+postcss = [ scss, autoprefixer ],
+
 // webpack
 webpack = require('webpack'),
 WebpackStrip = require('webpack-strip'),
 ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 
+
 module.exports = function webpackConfigGenerator ( source, destination, main, flags ) {
+
+  if ( !!flags.minify ) {
+    postcss.push( cssnano );
+  }
 
   const
 
@@ -23,13 +35,13 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
       filename: 'bundle.js',
     },
     context: source,
-    devtool: flags.sourcemap ? "inline-sourcemap" : null,
+    devtool: flags.sourcemap ? 'inline-sourcemap' : null,
     entry: {
       main
     },
     output: {
       path: destination,
-      filename: "app.js"
+      filename: 'app.js'
     },
     module: {
       preLoaders: [
@@ -42,7 +54,7 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
       loaders: [
         {
           test: /\.scss|\.sass/,
-          loaders: ["style", "css", "sass"]
+          loaders: ['style', 'css', 'sass', 'postcss']
         },
         {
             test: /\.(jpe?g|png|gif|svg)$/i,
@@ -62,6 +74,7 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
         }
       ]
     },
+    postcss: () => postcss,
     plugins: [
       new ProgressBarPlugin({
         format: 'webpack [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
