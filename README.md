@@ -42,8 +42,8 @@ This is meant to be both a design explanation as well as a project planning sect
 #### CSS
 * sass/scss compiler
 * [csscomb](https://github.com/koistya/csscomb-loader) for code style **@TODO**
-* [autoprefixing](https://github.com/passy/autoprefixer-loader) **@TODO**
-* minification **@TODO**
+* [autoprefixing](https://github.com/passy/autoprefixer-loader)
+* minification
 
 #### Assets
 * [minification](https://github.com/tcoopman/image-webpack-loader)
