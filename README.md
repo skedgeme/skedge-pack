@@ -41,7 +41,7 @@ This is meant to be both a design explanation as well as a project planning sect
 
 #### CSS
 * sass/scss compiler
-* [csscomb](https://github.com/koistya/csscomb-loader) for code style **@TODO**
+* [csscomb](https://github.com/koistya/csscomb-loader) for code style
 * [autoprefixing](https://github.com/passy/autoprefixer-loader)
 * minification
 

@@ -54,7 +54,7 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
       loaders: [
         {
           test: /\.scss|\.sass/,
-          loaders: ['style', 'css', 'sass', 'postcss']
+          loaders: ['style', 'css', 'csscomb', 'sass', 'postcss']
         },
         {
             test: /\.(jpe?g|png|gif|svg)$/i,
