@@ -117,8 +117,8 @@ Build : `spack dev source=source destination=app`
 | --minify | -m | minifies the output file/s |
 | --concat | -cc | concats the output files |
 | --test | -t | Runs all tests |
-| --selenium | -ts | Runs the selenium tests |
-| --phantom | -tp | Runs the phantom tests |
+| --unit | -tu | Runs the unit tests |
+| --integration | -ti | Runs the integration tests |
 | --watch | -w | Watch files and run changes |
 | --full | -f | Clear build folder and run complete build |
 | --ignore | -i | Keep building even if errors are found  |

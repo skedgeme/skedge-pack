@@ -32,8 +32,8 @@ parseFlags = flags => {
 
   if ( !!flags.test ) {
     delete flags.test;
-    flags.selenium = true;
-    flags.phantom = true;
+    flags.unit = true;
+    flags.integration = true;
   }
 
   return _.defaults( flags, {
@@ -41,8 +41,8 @@ parseFlags = flags => {
     sourcemaps: false,
     minify: false,
     concat: false,
-    selenium: false,
-    phantom: false,
+    integration: false,
+    unit: false,
     watch: false,
     full: false,
     ignore: false,
