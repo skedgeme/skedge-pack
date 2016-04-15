@@ -31,8 +31,9 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
   config = {
     entry: './src',
     output: {
-      path:     'builds',
-      filename: 'bundle.js',
+      path:       destination,
+      publicPath: destination,
+      filename:   main,
     },
     context: source,
     devtool: flags.sourcemap ? 'inline-sourcemap' : null,
