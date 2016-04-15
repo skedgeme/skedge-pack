@@ -8,6 +8,7 @@ path = require( 'path' ),
 _ = require( 'lodash' ),
 chalk = require( 'chalk' ),
 webpack = require( 'webpack' ),
+webpackDevServer = require( 'webpack-dev-server' ),
 
 /* local files */
 
@@ -162,7 +163,13 @@ module.exports = function skedge_pack ( options ) {
       hot: true,
       port: 8060,
       colors: true,
-      filename: "bundle.js",
+      filename: main,
+      watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
+      },
+      publicPath: '/',
+      stats: { colors: true }
     } );
 
     server.listen(8060);
