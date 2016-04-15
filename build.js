@@ -40,7 +40,6 @@ parseFlags = flags => {
     server: false,
     sourcemaps: false,
     minify: false,
-    concat: false,
     integration: false,
     unit: false,
     watch: false,
