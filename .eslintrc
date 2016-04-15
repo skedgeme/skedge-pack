@@ -4,6 +4,10 @@
   plugins : [ 'react', 'promise' ],
   env : {
     browser : true,
-    node : true
+    node : true,
+    es6 : true
+  },
+  ecmaFeautre: {
+    modules: true
   }
 }
