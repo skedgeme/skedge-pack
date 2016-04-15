@@ -8,7 +8,7 @@
   },
   "author": "Rafe Lepre",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.4",
     "babel-eslint": "^6.0.0",
@@ -42,16 +42,18 @@
     "postcss-loader": "^0.8.2",
     "postcss-scss": "^0.1.7",
     "progress-bar-webpack-plugin": "^1.6.0",
+    "redux-devtools": "^3.2.0",
     "sass-loader": "^3.2.0",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
     "webpack-strip": "^0.1.0"
   },
-  "dependencies": {
+  "devDependencies": {
     "history": "^2.0.1",
     "immutable": "^3.7.6",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.2",
     "react-router": "^2.0.1"
   }
 }
