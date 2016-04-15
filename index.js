@@ -121,10 +121,6 @@ createIndexBuffer = ( config, minify ) => {
 
   if ( minify === 1 ) { index.push(''); }
 
-  _.forEach( config.scripts, tagConfig => index.push( tab(2*minify) + buildScriptTag( tagConfig ) ) );
-
-  if ( minify === 1 ) { index.push(''); }
-
   index.push( tab(2*minify) + '<style>' );
   index.push( tab(3*minify) + 'html,body,#app {' );
   index.push( tab(4*minify) + 'margin: 0;' );
@@ -143,7 +139,7 @@ createIndexBuffer = ( config, minify ) => {
 
   if ( minify === 1 ) { index.push(''); }
 
-  _.forEach( paths.js, tagConfig => index.push( tab(2*minify) + buildScriptTag( tagConfig ) ) );
+  _.forEach( config.scripts, tagConfig => index.push( tab(2*minify) + buildScriptTag( tagConfig ) ) );
 
   if ( minify === 1 ) { index.push(''); }
 
