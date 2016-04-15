@@ -125,6 +125,15 @@ createIndexBuffer = ( config, minify ) => {
 
   if ( minify === 1 ) { index.push(''); }
 
+  index.push( tab(2*minify) + '<style>' );
+  index.push( tab(3*minify) + 'html,body,#app {' );
+  index.push( tab(4*minify) + 'margin: 0;' );
+  index.push( tab(4*minify) + 'padding: 0;' );
+  index.push( tab(3*minify) + '}' );
+  index.push( tab(2*minify) + '</style>' );
+
+  if ( minify === 1 ) { index.push(''); }
+
   index.push( `${tab(1*minify)}</head>` );
   index.push( `${tab(1*minify)}<body>` );
 
