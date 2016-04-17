@@ -135,7 +135,7 @@ createIndexBuffer = ( config, minify ) => {
 
   if ( minify === 1 ) { index.push(''); }
 
-  index.push( tab(2*minify) + '<div id="app" ></div>' );
+  index.push( tab(2*minify) + '<div id="root" ></div>' );
 
   if ( minify === 1 ) { index.push(''); }
 
