@@ -11,7 +11,7 @@ scss = require('postcss-scss'),
 autoprefixer = require('autoprefixer'),
 cssnano = require('cssnano'),
 
-postcss = [ scss, autoprefixer ],
+postcss = [ autoprefixer ],
 
 // webpack
 webpack = require('webpack'),
@@ -55,7 +55,7 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
       loaders: [
         {
           test: /\.scss|\.sass/,
-          loaders: ['style', 'css', 'csscomb', 'sass', 'postcss']
+          loaders: [ 'style', 'css', 'csscomb', 'postcss', 'sass' ]
         },
         {
             test: /\.(jpe?g|png|gif|svg)$/i,
