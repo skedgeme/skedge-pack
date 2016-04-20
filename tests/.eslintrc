@@ -1,0 +1,22 @@
+{
+  "parser" : "babel-eslint",
+  "extends" : [ "eslint:recommended", "idiomatic", "plugin:react/recommended"],
+  "plugins" : [ "react", "promise" ],
+  "env" : {
+    "browser" : true,
+    "node" : true,
+    "es6" : true
+  },
+
+  "parserOptions" : {
+    "ecmaFeatures" : {
+      "modules" : true,
+      "jsx" : true
+    }
+  },
+
+  "rules" : {
+    "react/no-unknown-property" : 0
+  }
+
+}

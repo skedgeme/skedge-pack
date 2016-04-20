@@ -8,6 +8,7 @@ path = require( 'path' ),
 _ = require( 'lodash' ),
 chalk = require( 'chalk' ),
 webpack = require( 'webpack' ),
+fs = require( 'fs' ),
 webpackDevServer = require( 'webpack-dev-server' ),
 
 /* local files */
@@ -16,6 +17,23 @@ index = require( './index.js' ),
 
 webpackConfigGenerator = require( './webpackConfigGenerator.js' ),
 
+copy = ( src, dest ) => {
+
+  console.log( `Copying ${chalk.cyan.dim( src )} to ${chalk.cyan( dest )}` );
+
+  fs.readFile( src, 'utf8', (err, data) => {
+
+    if (err) throw err;
+
+    fs.writeFile( dest, data, (err) => {
+
+      if (err) throw err;
+
+    });
+
+  });
+
+},
 
 parseFlags = flags => {
 
@@ -129,9 +147,13 @@ module.exports = function skedge_pack ( options ) {
   console.log( '\tdest   : ' + chalk.cyan( destination ) );
   console.log( '\tmain   : ' + chalk.cyan( main ) );
   console.log( '\tconfig : ' + chalk.cyan( configPath ) );
-  console.log( )
+  console.log( );
 
   index( flags, configPath, destination );
+
+  console.log( );
+  copy( `${__dirname}/.eslintrc`, `${process.cwd()}/.eslintrc` );
+  copy( `${__dirname}/.csscomb.json`, `${process.cwd()}/.csscomb.json` );
 
   console.log( );
   console.log( 'Running ' + chalk.green('webpack') );
