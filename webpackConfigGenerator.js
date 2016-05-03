@@ -65,13 +65,17 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
             ]
         },
         {
-          test: /\.jsx?$/,
+          test: /.*\.jsx?$/,
           exclude: /(config\.js|(_[^\/]*)|(.*\.spec\.js))$/,
           loader: 'babel-loader',
           query: {
             presets: [ 'react', 'es2015', 'stage-0' ],
             plugins: [ 'react-html-attrs', 'transform-class-properties' ],
           }
+        },
+        {
+          test: /.*\.json$/,
+          loader: 'json-loader'
         }
       ]
     },
