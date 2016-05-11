@@ -9,7 +9,7 @@ chalk = require('chalk'),
 // postcss
 scss = require('postcss-scss'),
 autoprefixer = require('autoprefixer'),
-cssnano = require('cssnano'),
+cssnano = require('cssnano')({zindex: false}),
 
 postcss = [ autoprefixer ],
 
