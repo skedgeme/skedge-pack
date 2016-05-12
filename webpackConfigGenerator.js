@@ -36,7 +36,7 @@ module.exports = function webpackConfigGenerator ( source, destination, main, fl
       filename:   main,
     },
     context: source,
-    devtool: flags.sourcemap ? 'inline-sourcemap' : null,
+    devtool: flags.sourcemaps ? 'source-map' : null,
     entry: {
       main
     },
