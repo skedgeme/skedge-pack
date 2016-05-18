@@ -2,7 +2,7 @@
   "name": "skedge-pack",
   "version": "0.9.8",
   "description": "skedge webpack react enviroment",
-  "main": "build.js",
+  "main": "main.js",
   "scripts": {
     "test": "cd tests && node test.js"
   },
@@ -48,6 +48,7 @@
     "postcss-loader": "^0.8.2",
     "postcss-scss": "^0.1.7",
     "progress-bar-webpack-plugin": "^1.6.0",
+    "prompt": "^1.0.0",
     "redux-devtools": "^3.2.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
