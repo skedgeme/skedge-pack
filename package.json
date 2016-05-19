@@ -1,6 +1,6 @@
 {
   "name": "skedge-pack",
-  "version": "0.9.8",
+  "version": "1.0.0",
   "description": "skedge webpack react enviroment",
   "main": "main.js",
   "scripts": {
