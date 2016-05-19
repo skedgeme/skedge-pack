@@ -3,7 +3,7 @@ Our webpack build system for developing react projects.
 
 ## Installing
 
-Copy the `default.json` file into your empty directory, then run `npm run setup`. Once that has completed run `npm run dev` for development and `npm run prod` for a production build.
+Copy the `default.json` file into your empty directory and rename it `package.json`. Afterward run `npm run setup`. Once that has completed run `npm run dev` for development and `npm run prod` for a production build.
 
 When running `npm run dev` use the url `https://0.0.0.0:8060`.
 
