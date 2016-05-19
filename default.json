@@ -5,7 +5,7 @@
   "scripts": {
     "setup": "npm install && node -e \"require('skedge-pack')({skeleton:true});\" ",
     "dev": "node -e \"require('skedge-pack')({ flags: 'server sourcemaps watch' });\" ",
-    "prod": "node -e \"require('skedge-pack')({ flags: 'minify test full' });\" "
+    "prod": "node -e \"require('skedge-pack')({ flags: 'minify test full offline' });\" "
   },
   "author": "Skedge Me",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",
     "redux": "^3.4.0",
+    "offline-plugin": "^3.2.1",
     "skedge-pack": "github:skedgeme/skedge-pack#v0.9.5"
   }
 }
