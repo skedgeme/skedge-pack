@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {} from './global.scss'
+
 class App extends React.Component {
 
   constructor() {
