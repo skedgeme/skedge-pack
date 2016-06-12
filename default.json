@@ -17,5 +17,17 @@
     "redux": "^3.4.0",
     "offline-plugin": "^3.2.1",
     "skedge-pack": "github:skedgeme/skedge-pack#v1.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.0.0",
+    "chromedriver": "^2.21.2",
+    "enzyme": "^2.3.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "react-addons": "^0.9.1-deprecated",
+    "react-addons-test-utils": "^15.1.0",
+    "selenium-standalone": "^5.1.0",
+    "wdio-jasmine-framework": "^0.2.1",
+    "webdriverio": "^4.0.9"
   }
 }
